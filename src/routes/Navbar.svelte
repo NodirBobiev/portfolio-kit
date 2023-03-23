@@ -6,7 +6,7 @@
     $: pageId = $page.route.id;
 
     const telegram = {
-        imgSrc: '/assets/telegram.png',
+        imgSrc: `${base}/assets/telegram.png`,
         alt: 'Telegram',
         href: "https://t.me/nodir_bobiev",
         id: "tg-link",
@@ -14,7 +14,7 @@
     }
 
     const github = {
-        imgSrc: '/assets/github.png',
+        imgSrc: `${base}/assets/github.png`,
         alt: 'Github',
         href: "https://github.com/NodirBobiev",
         id: "gh-link",
@@ -22,7 +22,7 @@
     }
 
     const email = {
-        imgSrc: '/assets/email.png',
+        imgSrc: `${base}/assets/email.png`,
         alt: 'Email',
         href: "mailto:n.bobiev@innopolis.university",
         id: "email",
