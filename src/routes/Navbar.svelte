@@ -1,33 +1,10 @@
 <script lang="ts">
-    import Icon from './Icon.svelte'
+    import Contacts from './Contacts.svelte';
     import {base} from "$app/paths"
     import {page} from "$app/stores"
 
     $: pageId = $page.route.id;
 
-    const telegram = {
-        imgSrc: `${base}/assets/telegram.png`,
-        alt: 'Telegram',
-        href: "https://t.me/nodir_bobiev",
-        id: "tg-link",
-        iconSize: 40
-    }
-
-    const github = {
-        imgSrc: `${base}/assets/github.png`,
-        alt: 'Github',
-        href: "https://github.com/NodirBobiev",
-        id: "gh-link",
-        iconSize: 40
-    }
-
-    const email = {
-        imgSrc: `${base}/assets/email.png`,
-        alt: 'Email',
-        href: "mailto:n.bobiev@innopolis.university",
-        id: "email",
-        iconSize: 40
-    }
 </script>
 
 <header>
@@ -36,11 +13,7 @@
             <a class="nav-link" href="{base}/" class:active={pageId==='/'}>About Me</a>
             <a class="nav-link" href="{base}/comic" class:active={pageId==='/comic'}>Comic</a>
         </div>
-        <div class="nav-links" style="width:140px;">
-            <Icon {...telegram}/>
-            <Icon {...github}/>
-            <Icon {...email}/>
-        </div>
+        <Contacts/>
     </nav>
 </header>
 

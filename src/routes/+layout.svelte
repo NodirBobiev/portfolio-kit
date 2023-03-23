@@ -1,6 +1,6 @@
 <script>
     import "./app.css"
-    import Contacts from "./Contacts.svelte";
+    import Footer from "./Footer.svelte";
     import Navbar from "./Navbar.svelte";
 </script>
 
@@ -8,4 +8,4 @@
 
 <slot/>
 
-<Contacts/>
+<Footer/>
